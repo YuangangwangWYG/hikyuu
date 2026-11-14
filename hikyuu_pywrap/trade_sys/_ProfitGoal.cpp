@@ -156,9 +156,12 @@ The custom profit goal strategy interfaces:
            R"(clone(self)
 
     Clone the profit goal strategy. The returned instance does not carry the trading object (to),
-    so to must be set before it is used)
-      .def("_calculate", &ProfitGoalBase::_calculate, "[Overload interface] The subclass calculation interface")
-      .def("_reset", &ProfitGoalBase::_reset, "[Overload interface] The subclass reset interface, resetting the internal private variables")
+    so to must be set before it is used)")
+      .def("_calculate", &ProfitGoalBase::_calculate,
+           "[Overload interface] The subclass calculation interface")
+      .def("_reset", &ProfitGoalBase::_reset,
+           "[Overload interface] The subclass reset interface, resetting the internal private "
+           "variables")
       .def("_get_goal", &ProfitGoalBase::_getGoal,
            "[Overload interface] The subclass goal price interface")
       .def("_get_short_goal", &ProfitGoalBase::_getShortGoal,
