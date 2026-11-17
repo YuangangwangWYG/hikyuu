@@ -147,3 +147,8 @@ wget-*
 hikyuu/cpp/i18n/zh_CN/hikyuu_plugin.mo
 soft_copyright_application
 compile_commands.json
+
+# the backtest example outputs
+hikyuu/examples/backtest_equity_curve*.png
+hikyuu/examples/batch_backtest_*.csv
+hikyuu/examples/batch_backtest_*.png
